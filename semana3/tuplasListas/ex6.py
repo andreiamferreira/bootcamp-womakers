@@ -3,3 +3,9 @@
 # utilizando somente letras maiúsculas. Dica: lembre−se que ao
 # informar o nome o usuário pode digitar letras maiúsculas ou
 # minúsculas.
+
+userName = input("Digite o seu nome: \n")
+
+reversedName = (userName[::-1]).upper()
+
+print(reversedName)
