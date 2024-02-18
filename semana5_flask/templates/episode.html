@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+            <h2 class="h2">{{episode.episode}}</h2>
+
+            <h3 class="h5">Episode Name: {{episode.name}}</h3>
+            <h3 class="h5">Air date: {{episode.air_date}}</h3>
+            <h3 class="h5">Characters: </h3>
+
+            
+            <div class="row">
+                {% for character_info in characters %}
+
+                <div class="col-sm-3 col-6">
+
+                    <img src="{{character_info.image}}" alt="{{character_info.name}}"
+                    class="img-fluid img-thumbnail" />
+        
+                    <h3 class="h5">{{character_info.name}}</h3>
+
+                </div>
+                {% endfor %}
+
+            </div>
+
+
+{% endblock %}
